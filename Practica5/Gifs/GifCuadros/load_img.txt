@@ -1,0 +1,64 @@
+#-------------------------------------------------------------------
+#
+#  Fichero:
+#    load_img.txt  11/2/2016
+#
+#    (c) J.M. Mendias
+#    Programación de Sistemas y Dispositivos
+#    Facultad de Informática. Universidad Complutense de Madrid
+#
+#  Propósito:
+#    Script del GDB que carga archivos de imagen en la memoria de la 
+#    placa de prototipado S3CEV40 para su visualización por el LCD  
+#
+#  Notas de diseño:
+#    - Los ficheros MEM y este script deben estar ubicados en el mismo 
+#      directorio
+#    - Previo a su ejecución desde una consola del GDB, debe cambiarse 
+#      al mencionado directorio con el comando: cd <ruta>
+#    - Para ejecurtarlo debe usarse el comando: source load_img.txt
+#    - Este script debe ejecutarse cada vez que se encienda la placa y 
+#      previa la ejecución del programa en la placa de prototipado
+#
+#-------------------------------------------------------------------
+
+echo Cargando en memoria las imagenes ...\n
+
+restore 0.mem  binary 0x0c400000
+restore 1.mem  binary 0x0c410000
+restore 2.mem  binary 0x0c420000
+restore 3.mem  binary 0x0c430000
+restore 4.mem  binary 0x0c440000
+restore 5.mem  binary 0x0c450000
+restore 6.mem  binary 0x0c460000
+restore 7.mem  binary 0x0c470000
+restore 8.mem  binary 0x0c480000
+restore 9.mem  binary 0x0c490000
+restore 10.mem binary 0x0c4a0000
+restore 11.mem binary 0x0c4b0000
+restore 12.mem binary 0x0c4c0000
+restore 13.mem binary 0x0c4d0000
+restore 14.mem binary 0x0c4e0000
+restore 15.mem binary 0x0c4f0000
+restore 16.mem binary 0x0c500000
+restore 17.mem binary 0x0c510000
+restore 18.mem binary 0x0c520000
+restore 19.mem binary 0x0c530000
+restore 20.mem binary 0x0c540000
+restore 21.mem binary 0x0c550000
+restore 22.mem binary 0x0c560000
+restore 23.mem binary 0x0c570000
+restore 24.mem binary 0x0c580000
+restore 25.mem binary 0x0c590000
+restore 26.mem binary 0x0c5a0000
+restore 27.mem binary 0x0c5b0000
+restore 28.mem binary 0x0c5c0000
+restore 29.mem binary 0x0c5d0000
+restore 30.mem binary 0x0c5e0000
+restore 31.mem binary 0x0c5f0000
+restore 32.mem binary 0x0c600000
+restore 33.mem binary 0x0c610000
+restore 34.mem binary 0x0c620000
+restore 35.mem binary 0x0c630000
+
+echo ...carga finalizada
